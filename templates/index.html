@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Translation</title>
+</head>
+<body>
+    <h1>Website Translation</h1>
+    <form action="/translate" method="POST">
+        <label for="text">Enter Text:</label>
+        <br>
+        <textarea name="text" id="text" rows="5" cols="50" required></textarea>
+        <br>
+        <label for="source_language">Source Language:</label>
+        <select name="source_language" id="source_language" required>
+            <option value="en">English</option>
+            <option value="nl">Dutch</option>
+            <!-- Add more language options as needed -->
+        </select>
+        <br>
+        <label for="target_language">Target Language:</label>
+        <select name="target_language" id="target_language" required>
+            <option value="en">English</option>
+            <option value="nl">Dutch</option>
+            <!-- Add more language options as needed -->
+        </select>
+        <br>
+        <button type="submit">Translate</button>
+    </form>
+</body>
+</html>
